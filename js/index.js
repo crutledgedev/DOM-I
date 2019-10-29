@@ -115,13 +115,13 @@ mainCont[8].textContent = siteContent["footer"]["copyright"];
 const wtf = document.querySelector('nav');
 console.log(wtf);
 
-wtf.prepend("OMG")
-wtf.append("BBQ")
+wtf.prepend("Omg")
+wtf.append("Bbq")
 
 const green = document.querySelector("a");
 
-const oddList = document.querySelectorAll('nav a');
-oddList.forEach( element => {
+const navList = document.querySelectorAll('nav a');
+navList.forEach( element => {
   element.style.color = "green"; 
 });
 
