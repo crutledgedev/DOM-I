@@ -112,7 +112,7 @@ mainCont[8].textContent = siteContent["footer"]["copyright"];
 // newContent.textContent ="OMG";
 
 // // Item Creation Step 3: prepend or append the element to an existing DOM node on the page
-const wtf = document.querySelector('nav a');
+const wtf = document.querySelector('nav');
 console.log(wtf);
 
 wtf.prepend("OMG")
