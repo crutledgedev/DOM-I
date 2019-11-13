@@ -39,4 +39,91 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
+
+let headerImg = document.getElementById("cta-img");
+headerImg.setAttribute('src', siteContent["cta"]["img-src"]);
+
+let middleImg = document.getElementById("middle-img");
+middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+//
+const navA = document.querySelectorAll("nav a");
+navA[0].textContent = siteContent["nav"]["nav-item-1"];
+navA[1].textContent = siteContent["nav"]["nav-item-2"];
+navA[2].textContent = siteContent["nav"]["nav-item-3"];
+navA[3].textContent = siteContent["nav"]["nav-item-4"];
+navA[4].textContent = siteContent["nav"]["nav-item-5"];
+navA[5].textContent = siteContent["nav"]["nav-item-6"];
+
+// const newContent = document.createElement("footer");
+// console.log(newContent);
+
+// // Item Creation Step 2: add some content to the newly created div
+// newContent.textContent ="Website made by Christina Gorton";
+
+// // Item Creation Step 3: prepend or append the element to an existing DOM node on the page
+// const parentElement = document.querySelector('nav');
+
+// parentElement.append(footer)
+
+
+const ctaText = document.querySelector("cta-text, h1");
+const ctaButton = document.querySelector("cta-text, button");
+ctaText.textContent = siteContent["cta"]["h1"];
+ctaButton.textContent = siteContent["cta"]["button"];
+
+
+const mainFour = document.querySelectorAll("h4");
+
+mainFour[0].textContent = siteContent["main-content"]["features-h4"];
+mainFour[1].textContent = siteContent["main-content"]["about-h4"];
+mainFour[2].textContent = siteContent["main-content"]["services-h4"];
+mainFour[3].textContent = siteContent["main-content"]["product-h4"];
+mainFour[4].textContent = siteContent["main-content"]["vision-h4"];
+mainFour[5].textContent = siteContent["contact"]["contact-h4"];
+
+const mainCont = document.querySelectorAll("p");
+mainCont[0].textContent = siteContent["main-content"]["features-content"];
+mainCont[1].textContent = siteContent["main-content"]["about-content"];
+mainCont[2].textContent = siteContent["main-content"]["services-content"];
+mainCont[3].textContent = siteContent["main-content"]["product-content"];
+mainCont[4].textContent = siteContent["main-content"]["vision-content"];
+mainCont[5].textContent = siteContent["contact"]["address"];
+mainCont[6].textContent = siteContent["contact"]["phone"];
+mainCont[7].textContent = siteContent["contact"]["email"];
+mainCont[8].textContent = siteContent["footer"]["copyright"];
+
+
+
+
+
+
+
+
+
+
+
+
+// const newContent = document.createElement("a");
+// console.log(newContent);
+
+// // Item Creation Step 2: add some content to the newly created div
+// newContent.textContent ="OMG";
+
+// // Item Creation Step 3: prepend or append the element to an existing DOM node on the page
+const wtf = document.querySelector('nav');
+console.log(wtf);
+
+wtf.prepend("Omg")
+wtf.append("Bbq")
+
+const green = document.querySelector("a");
+
+const navList = document.querySelectorAll('nav a');
+navList.forEach( element => {
+  element.style.color = "green"; 
+});
+
+
+
